@@ -1,4 +1,5 @@
 import './App.css';
+import { PokemonCard } from './src/components/PokemonCard';
 
 function App() {
   return (
@@ -6,6 +7,7 @@ function App() {
         <p>
           Gotta Catch Em All
         </p>
+        <PokemonCard />
     </div>
   );
 }

@@ -1,11 +1,12 @@
 import React from 'react'
+import data from './charizardData.json'
 
 export const PokemonCard = () => {
   return (
     <div>
-        <h1>Pokemon name</h1>
+        <h1>Name</h1>
         <img alt="charizard sprite">The pokemon sprite</img>
-        <p>Pokedex Dscription</p>
+        <p>{data}</p>
     </div>
   )
 }
