@@ -10,7 +10,7 @@ function App() {
           Gotta Catch Em All
         </p>
         <input />
-        <button>Search</button>
+        <button style={{ backgroundColor: "#1A58CA", border: "none", borderRadius: '5px', color: "#fff", height: "30px", width: "90px", fontSize: "20px"}}>Search</button>
         <PokemonCard />
     </div>
   );
