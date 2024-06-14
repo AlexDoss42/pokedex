@@ -1,6 +1,6 @@
 import React from 'react'
 import data from '../charizardData.json'
-console.log(data[0].types[0].type.name)
+console.log(data[0])
 export const PokemonCard = () => {
   return (
     <div style={{display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center"}}>
