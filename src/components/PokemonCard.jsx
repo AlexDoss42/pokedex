@@ -5,9 +5,7 @@ export const PokemonCard = () => {
   const [showShiny, setShowShiny] = useState(true);
 
   const handleShiny = () => {
-    console.log("before:", showShiny);
     setShowShiny(!showShiny)
-    console.log("after:", showShiny);
   }
   return (
     <div style={{display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center"}}>
@@ -27,7 +25,7 @@ export const PokemonCard = () => {
           <img src={data[0].sprites.back_default} alt="Normal Back of Charizard" />
           <img src={data[0].sprites.front_default} alt="Normal Front of Charizard" />
         </div>}
-        <button onClick={() => handleShiny()}>Toggle Shiny</button>
+        <button onClick={() => handleShiny()} style={{ backgroundColor: "#1A58CA", border: "none", borderRadius: '5px', color: "#fff", height: "30px", width: "150px", fontSize: "20px"}}>Toggle Shiny</button>
     </div>
   )
 }
