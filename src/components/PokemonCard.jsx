@@ -9,8 +9,8 @@ export const PokemonCard = () => {
   }
   return (
     <div style={{display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center"}}>
-        <h1>Name</h1>
-        <p>{data[0].name}</p>
+        <p>Name</p>
+        <h2>{data[0].name}</h2>
         <div className='types'>
           <a href={data[0].types[0].type.url}>{data[0].types[0].type.name}</a>
           <a href={data[0].types[1].type.url}>{data[0].types[1].type.name}</a>
