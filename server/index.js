@@ -18,5 +18,5 @@ app.get('pokemon/:pokemon_name', async (req, res) => {
     }
 });
 
-const PORT = 3030;;
+const PORT = 3030;
 app.listen(PORT, () => {console.log(`I CHOOSE YOU ${PORT}`)});
