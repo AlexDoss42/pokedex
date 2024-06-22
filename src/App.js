@@ -19,7 +19,7 @@ function App() {
     fetch(`https://pokeapi.co/api/v2/pokemon/${pokemonNameLower}`)
     .then((response) => response.json()
     .then((json) => {
-      console.log(json);
+      // console.log(json);
       setPokeData(json);
     }))
   }
@@ -32,7 +32,7 @@ function App() {
         </p>
         <input placeholder="WHOSE THAT POKEMON!!!" style={{ width: "360px", margin: '10px auto' }} type='text' id="name" value={pokemonName} onChange={e => setPokemonName(e.target.value)} />
         <button onClick={() => handleSearch(pokemonName)} style={{ backgroundColor: "#1A58CA", border: "none", borderRadius: '5px', color: "#fff", height: "30px", width: "90px", fontSize: "20px", margin: "10px auto"}}>Search</button>
-        {pokeData ? <PokemonCard pokeData={pokeData} /> : <></> }
+        {pokeData ? <PokemonCard rawData={pokeData} /> : <></> }
     </div>
   );
 }
