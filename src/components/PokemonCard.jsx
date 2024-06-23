@@ -4,7 +4,6 @@ import React, { useState } from 'react'
 
 export const PokemonCard = (rawData) => {
   const rawData2 = rawData.rawData;
-  console.log(rawData2)
   const { types, sprites, name } = rawData2;
   const [showShiny, setShowShiny] = useState(true);
 
@@ -13,8 +12,7 @@ export const PokemonCard = (rawData) => {
   }
   return (
     <div style={{display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center"}}>
-        <p>Name</p>
-        <h2>{name}</h2>
+        <h2>Name: {name}</h2>
         <div className='types'>
           <a href={types[0].type.url}>{types[0].type.name}</a>
           {types[1] ? 
