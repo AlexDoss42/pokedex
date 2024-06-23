@@ -26,12 +26,12 @@ export const PokemonCard = (rawData) => {
         
         {showShiny ? 
         <div className='shinySprites'>
-          <img src={sprites.back_shiny} alt="shiny back Charizard" />
-          <img src={sprites.front_shiny} alt="shiny front Charizard" />
+          <img src={sprites.back_shiny} alt="shiny back view" />
+          <img src={sprites.front_shiny} alt="shiny front view" />
         </div> : 
         <div className='defaultSprites'>
-          <img src={sprites.back_default} alt="Normal Back of Charizard" />
-          <img src={sprites.front_default} alt="Normal Front of Charizard" />
+          <img src={sprites.back_default} alt="Normal Back view" />
+          <img src={sprites.front_default} alt="Normal Front view" />
         </div>}
         <button onClick={() => handleShiny()} style={{ backgroundColor: "#1A58CA", border: "none", borderRadius: '5px', color: "#fff", height: "30px", width: "150px", fontSize: "20px"}}>Toggle Shiny</button>
     </div>
