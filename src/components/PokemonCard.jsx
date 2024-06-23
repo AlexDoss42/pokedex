@@ -17,7 +17,11 @@ export const PokemonCard = (rawData) => {
         <h2>{name}</h2>
         <div className='types'>
           <a href={types[0].type.url}>{types[0].type.name}</a>
+          {types[1] ? 
           <a href={types[1].type.url}>{types[1].type.name}</a>
+          :
+          <></>
+          }
         </div>
         
         {showShiny ? 
