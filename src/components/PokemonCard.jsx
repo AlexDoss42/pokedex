@@ -33,7 +33,7 @@ export const PokemonCard = (rawData) => {
           <img src={sprites.back_shiny} alt="shiny back view" />
           <img src={sprites.front_shiny} alt="shiny front view" />
         </div>}
-        <button class="toggleBtn" onClick={() => handleShiny()}>Toggle Shiny</button>
+        <button className="toggleBtn" onClick={() => handleShiny()}>Toggle Shiny</button>
     </div>
   )
 }
