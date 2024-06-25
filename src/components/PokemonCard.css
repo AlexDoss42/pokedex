@@ -17,6 +17,10 @@
     text-transform: uppercase;
 }
 
+.sprite {
+    margin: 12px;
+}
+
 .toggleBtn {
     background-color: #1A58CA;
     border: none; 
