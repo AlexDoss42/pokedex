@@ -12,7 +12,7 @@ export const PokemonCard = (rawData) => {
     setShowShiny(!showShiny)
   }
   return (
-    <div style={{display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center"}}>
+    <div className="pokemonContainer">
         <h2>Name: {name}</h2>
         <div className='types'>
           <a href={types[0].type.url}>{types[0].type.name}</a>
