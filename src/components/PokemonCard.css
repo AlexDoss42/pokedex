@@ -9,6 +9,7 @@
 .type {
     display: inline-block;
     background-color: grey;
+    color: #fff;
     border-radius: 4px;
     margin: 20px;
     padding: 8px;
