@@ -4,6 +4,8 @@ import React, { useEffect, useState } from 'react'
 
 export const TypeTile = ({typeData}) => {
     let { type } = typeData;
+    const [typeStyles, setTypeStyles] = useState({})
+    
     const getBackgroundColor = () =>{
         switch (type.name) {
           case 'fire':
@@ -23,15 +25,9 @@ export const TypeTile = ({typeData}) => {
       }
 }
 
-const [typeStyles, setTypeStyles] = useState({})
-
 useEffect(() => {
     setTypeStyles(() => getBackgroundColor())
 }, [type.name])
-
-    
-
-console.log(getBackgroundColor());
 
   return (
     <a className="type" style={typeStyles} href={type.url}>{type.name}</a>
