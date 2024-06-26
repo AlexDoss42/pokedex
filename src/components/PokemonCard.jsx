@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import "./PokemonCard.css";
+import { TypeTile } from './TypeTile';
 // import data from '../charizardData.json'
 
 
@@ -15,9 +16,9 @@ export const PokemonCard = (rawData) => {
     <div className="pokemonContainer">
         <h2>Name: {name}</h2>
         <div className='types'>
-          <a className="type" href={types[0].type.url}>{types[0].type.name}</a>
+          <TypeTile typeData={types[0]}/>
           {types[1] ? 
-          <a className="type" href={types[1].type.url}>{types[1].type.name}</a>
+            <TypeTile typeData={types[1]}/>
           :
           <></>
           }
