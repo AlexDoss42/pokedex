@@ -9,17 +9,11 @@ function App() {
   const [pokemonName, setPokemonName] = useState("");
   const [pokeData, setPokeData] = useState("")
 
-  // const handleSearch = () => {
-  //     axios.get(`pokemon/${pokemonName}`).then(response => setPokeData(response.data))
-  //   console.log(response.data);
-  // }
-
   const handleSearch = (pokemonName) => {
     let pokemonNameLower = pokemonName.toLowerCase()
     fetch(`https://pokeapi.co/api/v2/pokemon/${pokemonNameLower}`)
     .then((response) => response.json()
     .then((json) => {
-      // console.log(json);
       setPokeData(json);
     }))
   }
