@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-
+import "./TypeTile.css"
 
 
 export const TypeTile = ({typeData}) => {
