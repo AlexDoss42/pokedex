@@ -5,10 +5,11 @@ import { ItsPikachu } from './components/ItsPikachu';
 
 function App() {
   const [pokemonName, setPokemonName] = useState("");
-  const [pokeData, setPokeData] = useState("")
+  const [pokeData, setPokeData] = useState('')
   const [itsPikachu, setItsPikachu] = useState(false);
 
   const handleSearch = (pokemonName) => {
+    setPokeData('')
     let pokemonNameLower = pokemonName.toLowerCase()
     fetch(`https://pokeapi.co/api/v2/pokemon/${pokemonNameLower}`)
     .then((response) => response.json()
@@ -17,8 +18,8 @@ function App() {
     })).catch(() => {
       window.alert("Oops it looks like that isn't a pokemon")
       setItsPikachu(true);
-      setPokemonName("");
     })
+    setPokemonName("");
   }
 
 
