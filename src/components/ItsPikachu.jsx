@@ -1,8 +1,9 @@
 import React from 'react'
+import './ItsPikachu.css'
 
 export const ItsPikachu = () => {
   return (
-    <div>
+    <div class="its-pikachu-container">
         <iframe 
             width="560" 
             height="315" 

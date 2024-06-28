@@ -2,9 +2,6 @@ import './App.css';
 import React, { useState }  from 'react';
 import { PokemonCard } from './components/PokemonCard';
 import { ItsPikachu } from './components/ItsPikachu';
-// import { response } from 'express';
-// import axios from 'axios';
-
 
 function App() {
   const [pokemonName, setPokemonName] = useState("");
