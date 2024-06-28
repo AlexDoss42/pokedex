@@ -6,6 +6,10 @@
     padding: 12px 0;
 }
 
+.name-header {
+    text-transform: capitalize;
+}
+
 .sprite {
     margin: 12px;
 }

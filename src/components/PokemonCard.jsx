@@ -14,7 +14,7 @@ export const PokemonCard = (rawData) => {
   }
   return (
     <div className="pokemonContainer">
-        <h2>Name: {name}</h2>
+        <h2 className="name-header">Name: {name}</h2>
         <div className='types'>
           <TypeTile typeData={types[0]}/>
           {types[1] ? 
