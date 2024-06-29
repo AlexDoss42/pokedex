@@ -1,0 +1,28 @@
+.App {
+    background-color: #ff0000; 
+    display: flex;
+    flex-direction: column; 
+    align-content: center;
+}
+
+#slogan {
+    text-align: center; 
+    margin-top: 0px; 
+    padding-top: 10px;
+}
+
+#name {
+    width: 360px; 
+    margin: 10px auto;
+}
+
+#search-btn {
+    background-color: #1A58CA; 
+    border: none; 
+    border-radius: 5px; 
+    color: #fff; 
+    height: 30px;
+    width: 90px; 
+    font-size: 20px;
+    margin: 10px auto;
+}
